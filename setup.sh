@@ -2,7 +2,7 @@
 IFS=$'\n\t'
 
 # Every time this script is modified, the SCRIPT_VERSION must be incremented
-SCRIPT_VERSION="1.0.40"
+SCRIPT_VERSION="1.0.41"
 
 # Get current user's username
 USERNAME=$(whoami)
@@ -528,7 +528,7 @@ install_nvm_node(){
     return 0
   fi
   
-  if ! curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/refs/heads/master/install.sh | bash; then
+  if ! curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/refs/heads/main/install.sh | bash; then
     error "Failed to install NVM"
     return 1
   fi
@@ -583,7 +583,7 @@ clone_repos(){
   cd "$BASE" || error "Failed to change to dev directory"
 
   REPOS=(
-    "peasy-master|git@github.com:pal/peasy.git#master"
+    "peasy-master|git@github.com:pal/peasy.git#main"
     "peasy|git@github.com:pal/peasy.git#planetscale"
     "frankfurter|git@github.com:pal/frankfurter.git"
     "peasy_client|git@github.com:pal/peasy_client.git"

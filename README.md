@@ -3,10 +3,10 @@
 Here's a script that will setup a new Mac with all the tools and apps I use.
 
 
-Run using `curl -sL https://raw.githubusercontent.com/pal/mac-setup-script/master/setup.sh | bash`
+Run using `curl -sL https://raw.githubusercontent.com/pal/mac-setup-script/main/setup.sh | bash`
 
 Or if it's cached, use this:
-`curl -sL "https://raw.githubusercontent.com/pal/mac-setup-script/master/setup.sh?t=$(date +%s)" | bash`
+`curl -sL "https://raw.githubusercontent.com/pal/mac-setup-script/main/setup.sh?t=$(date +%s)" | bash`
 
 
 
@@ -206,7 +206,7 @@ Install the following applications:
 Create and clone the following repositories in ~/dev:
 
 ### Peasy & Related
-- peasy-master (master branch of peasy): `git@github.com:pal/peasy.git --single-branch --branch master`
+- peasy-master (main branch of peasy): `git@github.com:pal/peasy.git --single-branch --branch main`
 - peasy (planetscale branch of peasy): `git@github.com:pal/peasy.git --single-branch --branch planetscale`
 - frankfurter: `git@github.com:pal/frankfurter.git`
 - peasy_client: `git@github.com:pal/peasy_client.git`
