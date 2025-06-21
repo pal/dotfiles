@@ -2,7 +2,7 @@
 IFS=$'\n\t'
 
 # Every time this script is modified, the SCRIPT_VERSION must be incremented
-SCRIPT_VERSION="1.0.39"
+SCRIPT_VERSION="1.0.40"
 
 # Get current user's username
 USERNAME=$(whoami)
@@ -158,7 +158,7 @@ accept_xcode_license(){
 
 brew_bundle(){
   log "📦 Installing Homebrew packages and casks..."
-  BREW_PKGS=(aws-cdk awscli bash direnv eza ffmpeg fish gh git jq libpq mackup mas maven p7zip pkgconf pnpm postgresql@16 ripgrep subversion wget nx gum yarn)
+  BREW_PKGS=(aws-cdk awscli bash direnv eza ffmpeg fish gh git jq libpq mas maven p7zip pkgconf pnpm postgresql@16 ripgrep subversion wget nx gum yarn)
   BREW_CASKS=(1password aws-vault beekeeper-studio cloudflare-warp cursor cyberduck devutils discord dropbox dynobase elgato-control-center figma rapidapi font-fira-code font-input font-inter font-jetbrains-mono font-roboto font-geist-mono ghostty google-chrome microsoft-teams mysides orbstack raycast session-manager-plugin slack telegram spotify visual-studio-code zoom chatgpt)
   
   # Get list of installed packages and casks once
@@ -631,21 +631,6 @@ clone_repos(){
   done
 }
 
-mackup_config(){
-  log "💾 Configuring Mackup backup..."
-  # Check if config already exists
-  if [[ -f ~/.mackup.cfg ]]; then
-    log "Mackup configuration already exists"
-    return 0
-  fi
-  
-  mkdir -p ~/.mackup || error "Failed to create Mackup directory"
-  cat > ~/.mackup.cfg <<'EOF' || error "Failed to write Mackup config"
-[storage]
-engine = iCloud Drive
-EOF
-}
-
 post_install(){
   log "Post-installation steps:"
   log "1. Open and sign in to required apps:"
@@ -855,7 +840,6 @@ main(){
   install_nvm_node
   setup_ssh_keys
   clone_repos
-  mackup_config
   post_install
   
   # Calculate and display duration

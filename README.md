@@ -132,7 +132,6 @@ Install the following tools via Homebrew:
 - git
 - jq
 - libpq
-- mackup
 - mas (Mac App Store CLI)
 - maven
 - p7zip
@@ -246,12 +245,6 @@ Create and clone the following repositories in ~/dev:
 - productvoice: `git@github.com:WeDoProducts/productvoice.git`
 - covid-containment: `git@github.com:Shpigford/covid-containment.git`
 
-## Backup & Restore
-
-- Configure Mackup for settings backup/restore
-- Store Mackup configuration in iCloud Drive
-- Restore settings from iCloud backup
-
 ## Post-Installation Steps
 
 1. Open each of the following applications once to ensure proper configuration and login:
@@ -263,7 +256,6 @@ Create and clone the following repositories in ~/dev:
    - dynobase (see https://member.dynobase.dev/)
    - rapidapi
 2. Configure Dropbox folder sync to only sync the following folders:
-   - ~/Mackup
    - ~/Privat/palbrattberg.com
    - ~/Privat/tictactoe
 3. Accept Xcode license
