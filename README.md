@@ -203,7 +203,7 @@ Install the following applications:
 
 ## Repository Setup
 
-Create and clone the following repositories in ~/dev:
+Create and clone the my starter repositories in ~/dev:
 
 ### Peasy & Related
 - peasy-master (main branch of peasy): `git@github.com:pal/peasy.git --single-branch --branch main`
@@ -227,23 +227,17 @@ Create and clone the following repositories in ~/dev:
 - julafton.com: `git@github.com:subtree/julafton.com.git`
 
 ### Personal Projects
-- mac-setup-script: `git@github.com:pal/mac-setup-script.git`
 - palbrattberg.com: `git@github.com:pal/palbrattberg.com.git`
 - ai-pres: `git@github.com:pal/ai-pres.git`
-- deep-research: `git@github.com:pal/deep-research.git`
 - domainchecker: `https://github.com/pal/domainchecker.git`
 - mousegame: `https://github.com/pal/mousegame.git`
 
 ### Infrastructure & Tools
 - k8s-hosting: `https://github.com/subtree/k8s-hosting.git`
-- typemill: `git@github.com:typemill/typemill.git`
-- wiki: `git@github.com:requarks/wiki.git`
-- bolt.diy: `git@github.com:stackblitz-labs/bolt.diy.git`
 - opencontrol: `git@github.com:toolbeam/opencontrol.git`
 
 ### Other Projects
 - productvoice: `git@github.com:WeDoProducts/productvoice.git`
-- covid-containment: `git@github.com:Shpigford/covid-containment.git`
 
 ## Post-Installation Steps
 

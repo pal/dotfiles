@@ -2,7 +2,7 @@
 IFS=$'\n\t'
 
 # Every time this script is modified, the SCRIPT_VERSION must be incremented
-SCRIPT_VERSION="1.0.41"
+SCRIPT_VERSION="1.0.42"
 
 # Get current user's username
 USERNAME=$(whoami)
@@ -600,17 +600,13 @@ clone_repos(){
     "subtree.se|git@github.com:subtree/subtree.se.git"
     "jujino.com|git@github.com:subtree/jujino.com.git"
     "julafton.com|git@github.com:subtree/julafton.com.git"
-    "mac-setup-script|git@github.com:pal/mac-setup-script.git"
     "palbrattberg.com|git@github.com:pal/palbrattberg.com.git"
     "ai-pres|git@github.com:pal/ai-pres.git"
-    "deep-research|git@github.com:pal/deep-research.git"
     "domainchecker|git@github.com:pal/domainchecker.git"
     "mousegame|git@github.com:pal/mousegame.git"
     "k8s-hosting|git@github.com:subtree/k8s-hosting.git"
-    "bolt.diy|git@github.com:stackblitz-labs/bolt.diy.git"
     "opencontrol|git@github.com:toolbeam/opencontrol.git"
     # "productvoice|git@github.com:WeDoProducts/productvoice.git"
-    # "covid-containment|git@github.com:Shpigford/covid-containment.git"
   )
 
   for entry in "${REPOS[@]}"; do
